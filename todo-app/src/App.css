@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in all;
+}
+
+input{
+  padding: 1rem 0.75rem;
+  font-size: 1rem;
+  margin: 0 0.2rem;
+  box-shadow: 0 0 4px 1px #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"]{
+  background-color: #000;
+  color: #fff;
+}
+
+.todolist{
+  padding: 1rem;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.todolist::-webkit-scrollbar{
+  display: none;
+}
+
+.todoitem{
+  width:100%;
+  padding: 1rem;
+  box-shadow: 0 0 4px 1px #ccc;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete{
+  cursor: pointer;
+  padding: 1rem;
+  color: crimson;
+  user-select:none;
+}
+
+.delete:hover{
+  background-color: #0003;
+}
+.todotext{
+  flex: 1;
+  user-select: none;
+  cursor: pointer;
+}
+
+.strike-through{
+  text-decoration: line-through;
+  color:#ccc;
+}
